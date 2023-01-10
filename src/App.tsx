@@ -1,29 +1,7 @@
-import { FC, useEffect, useState } from 'react';
-
-import '@fortawesome/fontawesome-free/css/all.css';
-import 'bulma/css/bulma.css';
-import './App.scss';
-
-import { Loader } from './components/Loader';
-import { PeopleTable } from './components/PeopleTable';
+import { FC } from 'react';
 
 export const App: FC = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 500);
-  }, []);
-
   return (
-    <div className="box">
-      <h1 className="title">People table</h1>
-
-      {isLoading
-        ? <Loader />
-        : <PeopleTable />
-      }
-    </div>
+    <h1>dsfgs</h1>
   );
 };
