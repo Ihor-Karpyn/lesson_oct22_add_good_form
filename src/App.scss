@@ -3,23 +3,25 @@ iframe {
   display: none;
 }
 
-button {
-  cursor: pointer; // to that it is clickable
-  transition: 0.3s background-color;
+.input {
+  margin-bottom: 4px;
 }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+.inputError {
+  border-color: red;
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+.errorMessage {
+  margin: 0 0 8px;
+  font-size: 12px;
+  min-height: 12px;
+  color: red;
+
+  visibility: hidden;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+.errorMessageVisible {
+  visibility: visible;
 }
+
+
